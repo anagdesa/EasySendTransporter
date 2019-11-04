@@ -1,4 +1,4 @@
-# EasySendTrans
+# Easy Send Transporter
 App EasySend Transporter for android
 By Anagdesa aka wega
 
