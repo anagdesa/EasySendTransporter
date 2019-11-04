@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenHome.IntroActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpageriklan"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_viewpageriklan" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_viewpager"
+        app:tabBackground="@drawable/indicator_selector">
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/intro_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:drawableStart="@drawable/ic_person__24dp"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/gradient_end_color"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/kotak_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_indicator">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/order_list"
+        android:layout_width="126dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:text="List Pesanan"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_indicator"
+        app:layout_constraintVertical_bias="0.511" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/kotak_menu"
+        android:textAlignment="center"
+        app:itemIconTint="@color/gradient_start_color"
+        app:itemTextColor="@color/gradient_start_color"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_bottom_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

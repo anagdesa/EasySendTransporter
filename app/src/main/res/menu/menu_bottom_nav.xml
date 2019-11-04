@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/Beranda"
+
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/beranda" />
+
+      <item
+          android:id="@+id/Pesanan"
+        android:icon="@drawable/ic_truck_car_black_24dp"
+        android:title="@string/pesanan"
+          app:showAsAction="never"/>
+    <item
+        android:id="@+id/Pesan"
+        android:icon="@drawable/ic_pesanan_black_24dp"
+        android:title="@string/pesan"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Surat"
+        android:icon="@drawable/ic_surat_black_24dp"
+        android:title="@string/surat"
+        app:showAsAction="never"/>
+    <item
+
+        android:id="@+id/Tagihan"
+        android:icon="@drawable/ic_tagihan_black_24dp"
+        android:title="@string/tagihan"
+        app:showAsAction="never" />
+
+  </menu>

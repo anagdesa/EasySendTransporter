@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EasySendTrans</string>
+    <string name="menu_beranda">Home</string>
+    <string name="beranda">Beranda</string>
+    <string name="tagihan">Tagihan</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="pesan">Pesan</string>
+    <string name="surat">Surat</string>
+</resources>
