@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        //activasi tombol daftar ke form pendaftaran
+        //aktivasi tombol daftar ke form pendaftaran
 
         tombole = (Button)findViewById(R.id.daftar);
     tombole.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(i); }
             });
 
-        //activasi tombol daftar ke home
+        //aktivasi tombol daftar ke home
         tombole = (Button) findViewById(R.id.masuk);
     tombole.setOnClickListener(new View.OnClickListener(){
         @Override

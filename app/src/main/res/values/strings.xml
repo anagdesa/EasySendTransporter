@@ -6,4 +6,7 @@
     <string name="pesanan">Pesanan</string>
     <string name="pesan">Pesan</string>
     <string name="surat">Surat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

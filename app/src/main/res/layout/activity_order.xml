@@ -57,6 +57,8 @@
 
     </com.google.android.material.tabs.TabLayout>
 
+
+
     <LinearLayout
         android:id="@+id/relativeLayout"
         android:layout_width="293dp"
@@ -76,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
             android:textColorHint="@color/merah"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
@@ -86,9 +88,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/calibri"
-                android:hint="Jumlah Pesanan"
+                android:hint="Jumlah Truck"
                 android:inputType="phone"
-                android:textSize="16dp" />
+                android:textSize="10dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,18 +103,25 @@
                 android:id="@+id/kurang"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
-                android:paddingLeft="8dp"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_plus"
+                android:text="-"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                />
 
             <Button
                 android:id="@+id/tambah"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
-                android:textSize="8dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="130dp"
+                android:background="@drawable/button_minus"
+                android:text="+"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                />
 
         </LinearLayout>
 
@@ -121,7 +130,46 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:text="Batal"
+            android:textAllCaps="false"
+            android:textColor="@color/gradient_start_color"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            android:textColor="@color/gradient_start_color"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="301dp"
         android:layout_height="65dp"
         android:layout_marginStart="10dp"
@@ -131,8 +179,8 @@
         android:background="@drawable/kotak_menu"
         android:textAlignment="center"
         app:itemIconTint="@color/gradient_start_color"
-        app:itemTextColor="@color/gradient_start_color"
 
+        app:itemTextColor="@color/gradient_start_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
