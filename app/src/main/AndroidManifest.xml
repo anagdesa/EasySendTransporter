@@ -9,17 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu_selesai"></activity>
+
+        <activity android:name=".Menu_selesai" />
         <activity android:name=".Menu_progress" />
         <activity android:name=".Menu_dipesan" />
-        <activity android:name=".Tugas_Driver" />
+
         <activity android:name=".ScreenHome.IntroActivity" />
         <activity android:name=".Pendaftaran.RegistrasiActivity" />
         <activity android:name=".Main.MainActivity" />
         <activity android:name=".OrderActivity" />
         <activity android:name=".Login.LoginActivity" />
         <activity android:name=".SplashScreen.HomeScreen" />
-        <activity android:name=".Pesanan_Saya">
+        <activity android:name=".Pesanan_Saya" />
+        <activity android:name=".DetailPesanan"/>
+        <activity android:name=".CheckPesanan"/>
+            <activity android:name=".Tugas_Driver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -144,11 +144,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
-            android:background="@drawable/buttonshapewhitebg"
+            android:background="@drawable/button_back"
             android:fontFamily="@font/calibri"
             android:text="Batal"
             android:textAllCaps="false"
-            android:textColor="@color/gradient_start_color"
+            android:textColor="@color/colorAccent"
             android:textSize="16dp"
             android:textStyle="bold" />
 

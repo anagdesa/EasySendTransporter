@@ -13,6 +13,7 @@
     <color name="tab_title_color_">#000000</color>
     <color name="intro_description_color">#656565</color>
     <color name="textInputLayout">#96ffffff</color>
+    <color name="textpesanan">#E9E4E4</color>
 
     <!-- Tombol -->
     <color name="merah">#FF5722</color>
